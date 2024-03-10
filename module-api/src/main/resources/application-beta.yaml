@@ -1,5 +1,6 @@
-
 spring:
+  activate:
+    on-profile: beta
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
     url: jdbc:mariadb://localhost:3306/multimodule
@@ -7,5 +8,5 @@ spring:
     password: ${SPRING_DATASOURCE_PASSWORD}
   jpa:
     hibernate:
-      ddl-auto: create # be carefule
+      ddl-auto: create # be careful
     show-sql: true
